@@ -24,12 +24,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Install Active Directory
+- Create a Domain Admin User within the Domain
+- Join Client-1 Virtual Machine to the domain (mydomain.com)
+- Set up Remote Desktop for non-administrative users on the Client-1 Virtual Machine
+- Create additional Non-Administrative Users and attempt to log into Client-1 Virtual Machine with one of the new users
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Deployment and Configuration</h2>
+
+Log in to DC-1 and install Active Directory Domain Services
+Promote as a DC: Set up a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
